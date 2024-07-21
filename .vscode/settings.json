@@ -1,0 +1,6 @@
+{
+    "json.format.enable": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "notebook.defaultFormatter": "rvest.vs-code-prettier-eslint",
+    "editor.formatOnSave": true
+}
