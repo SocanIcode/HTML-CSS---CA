@@ -22,7 +22,6 @@ footer,
 nav {
   color: #fff;
   background-color: #005c81;
-  padding: 10px;
   box-sizing: border-box;
 }
 /*button*/
@@ -171,12 +170,14 @@ footer {
 }
 
 .more-info {
-  font-weight: bold;
   word-spacing: 10px;
   text-align: center;
   border-top: solid 2px #ca9625;
   padding: 10px;
   color: #f7f7f7;
+}
+.more-info a {
+  color: white;
 }
 
 /* Main Content and Grid Layout*/
@@ -373,8 +374,7 @@ input[type="radio"]:checked + .nav-man1 {
 }
 
 .product-item h4 {
-  font-size: 1.4em;
-  margin-bottom: 10px;
+  padding: 5px;
 }
 
 .product-item h5 {
@@ -400,7 +400,6 @@ input[type="radio"]:checked + .nav-man1 {
   padding: 10px 20px;
   color: #fff;
   font-size: 1em;
-  font-weight: bolder;
   text-decoration: none;
   transition: background-color 0.3s, border-color 0.3s;
 }
@@ -453,6 +452,7 @@ input[type="radio"]:checked + .nav-man1 {
   width: 100%;
   height: auto;
   object-fit: contain;
+  margin-top: 8px;
 }
 
 .text h4 {
@@ -853,6 +853,7 @@ input[type="submit"]:hover {
 
   .render i {
     font-size: 20px;
+    color: white;
   }
 
   .item {
