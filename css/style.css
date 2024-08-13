@@ -94,6 +94,7 @@ nav ul li a {
   padding: 10px 15px;
   display: block;
   transition: background-color 0.3s;
+  font-size: 15px;
 }
 
 nav ul li a:hover {
@@ -109,7 +110,7 @@ nav ul li a:hover {
 #icons a {
   color: #fff;
   text-decoration: none;
-  padding: 2px;
+  padding: 8px;
   font-size: 18px;
 }
 
@@ -146,6 +147,7 @@ footer {
 
 .render i {
   font-size: 24px;
+  color: white;
 }
 
 .render i:hover {
@@ -481,6 +483,9 @@ input[type="radio"]:checked + .nav-man1 {
 .content-wrapper {
   display: flex;
   flex-direction: column;
+}
+.content-wrapper h3 {
+  margin: 15px 0;
 }
 .about-wrapper {
   display: flex;
@@ -908,7 +913,7 @@ input[type="submit"]:hover {
     flex: 1 1 calc(50% - 20px);
   }
   .blog {
-    flex-direction: row;
+    flex-direction: column;
     padding: 20px;
   }
 
@@ -933,7 +938,7 @@ input[type="submit"]:hover {
 
   /* Content Wrapper */
   .about-wrapper {
-    flex-direction: row;
+    flex-direction: column;
     flex: 1;
     align-items: flex-start;
   }
@@ -948,8 +953,10 @@ input[type="submit"]:hover {
 
   /* Text About */
   .textabout {
-    width: 50%;
     padding-inline-start: 25px;
+  }
+  .textabout p {
+    font-size: 14px;
   }
   /* contact page*/
   .contact-container {
@@ -1072,6 +1079,9 @@ input[type="submit"]:hover {
   nav ul li {
     margin-left: 20px;
   }
+  nav ul li a {
+    font-size: inherit;
+  }
   .info-footer {
     justify-content: space-between;
   }
@@ -1147,6 +1157,15 @@ input[type="submit"]:hover {
   }
 
   .login-section {
+    flex-direction: row;
+  }
+  .textabout p {
+    font-size: inherit;
+  }
+  .about-wrapper {
+    flex-direction: row;
+  }
+  .blog {
     flex-direction: row;
   }
 }
