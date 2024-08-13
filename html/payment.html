@@ -1,191 +1,256 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Join RainDay, we have various payment methods and manage your account securely. We offer seamless shopping and secure payments." />
-    <title>RainDays|payment </title>
-    <link href ="../css/style.css" rel ="stylesheet"/>     
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Join RainDay, we have various payment methods and manage your account securely. We offer seamless shopping and secure payments."
+    />
+    <title>RainDays|payment</title>
+    <link href="../css/style.css" rel="stylesheet" />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-      
-</head>
-<body>
-   
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
     <header>
-        <div class="logo">
-            <a href="../index.html"><img src="../image/RainyDays_Logo.png" alt="RainDays logo" id="logo"/></a>
+      <div class="logo">
+        <a href="../index.html"
+          ><img src="../image/RainyDays_Logo.png" alt="RainDays logo" id="logo"
+        /></a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div id="icons">
+          <a href="products.html"><i class="fa-solid fa-cart-shopping"></i></a>
+          <a href="account.html"><i class="fa-regular fa-user"></i></a>
         </div>
-        <nav>
-            <ul>
-                <li> <a href="../index.html">Home</a></li>
-                <li><a href="products.html">Products</a></li>
-                <li> <a href="about.html">About</a></li>
-                <li> <a href="contact.html">Contact</a></li>
-            </ul>
-            <div id="icons">
-                <a href="products.html"><i class="fa-solid fa-cart-shopping"></i></a>
-                <a href="account.html"><i class="fa-regular fa-user"></i></a>
-            </div>
-        </nav>
+      </nav>
     </header>
-    <main>   
-        <div class="content">
-            <div class="row">
-                <!-- Order and Payment -->
-                <div class="order-section">
-                    <div class="order">
-                        <div><h1>Order Summary</h1> </div>
-                        <div class="jacket-view ai-jacket">
-                            <div class="jacket-image">
-                              <img src="../image/Mred-jacket.jpg" alt="Rainday Jacket Men Red"/>  
-                            </div>
-                            <div class="jacket-info">
-                              <div class="rating">
-                                <h3>Fleece Jacket Style with All Seasons - Red Men's Jacket with Zip</h3>
-                                <p>SKU: 2512117</p>
-                                <div class="rating-stars">
-                                  <i class="fa-solid fa-star"></i>
-                                  <i class="fa-solid fa-star"></i>
-                                  <i class="fa-solid fa-star"></i>
-                                  <i class="fa-solid fa-star"></i>
-                                  <i class="fa-regular fa-star-half-stroke"></i>
-                                </div>
-                              </div>
-
-                              <div class="details">
-                   
-                                <label for="size">size</label>
-                                <select id="size" name="size" placeholder="46(S)">
-                                    <option value="46(S)">46(S)</option>
-                                    <option value="48(M)">48(M)</option>
-                                    <option value="50(L)">50(L)</option>
-                                     <option value="52(XL)">52(XL)</option>         
-                                </select>
-                               </div>
-                            <div class="details">
-                                <label for="quantity">Qty</label>
-                                <select id="quantity" name="quantity" placeholder="1" >
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                     <option value="3">4</option>         
-                                </select>
-                            </div>
-                            <div class="details">
-                                <label for="color">Color</label>
-                                <select id="color" name="color" placeholder="Red">
-                                    <option value="Red">Red</option>
-                                    <option value="light Green">Light green</option>
-                                    <option value="green">Green</option>
-                                     <option value="black">Black</option>         
-                                </select>
-                               </div>
-                           <div class="details price">
-                                <label for="picklist">Total</label>
-                                <select id="picklist" name="picklist" placeholder="46(S)">
-                                    <option value="1">800kr</option>
-                                    <option value="2">1600kr</option>
-                                    <option value="3">2400kr</option>
-                                     <option value="4">3600kr</option>         
-                                </select>
-                               </div>
-                        </div>
-
-                            </div>
-                          </div>
-                       
-                        <!-- Payment Methods -->
-                        <div class="order-view creditcard">
-                            <h3>Payment Requested</h3>
-                            <input type="radio" id="paypal" name="payment-method" value="paypal" />
-                            <label for="paypal"><i class="fa-brands fa-paypal"></i></label>
-                            <input type="radio" id="debit" name="payment-method" />
-                            <label for="debit">
-                                <i class="fa-brands fa-cc-visa"></i>
-                                <i class="fa-brands fa-cc-mastercard"></i>
-                            </label>
-                            <div class="card">
-                                <div class="paypal">
-                                    <h3>Paypal</h3>
-                                    <div class="login">
-                                       
-                                        <input type="email" id="info" name="info" placeholder="Name or email" />
-                                    </div>
-                                
-                                    <button type="button"><a href="thankyou.html">Confirm</a> </button> 
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+    <main>
+      <div class="content">
+        <div class="row">
+          <!-- Order and Payment -->
+          <div class="order-section">
+            <div class="order">
+              <div><h1>Order Summary</h1></div>
+              <div class="jacket-view ai-jacket">
+                <div class="jacket-image">
+                  <img
+                    src="../image/Mred-jacket.jpg"
+                    alt="Rainday Jacket Men Red"
+                  />
                 </div>
-                <!-- Login Sections -->
-                <div class="login-section">
-                    <div class="login">
-                        <label for="email">Email</label><br>
-                        <input type="email" id="email" name="email" placeholder="nam@example.com" pattern=".*@example.com" required />
-                        <label for="password">Password</label>
-                        <input type="password" id="password" name="password" maxlength="50" placeholder="........" required />
-                        <input type="submit" value="Login" class="cta-small" />
+                <div class="jacket-info">
+                  <div class="rating">
+                    <h3>
+                      Fleece Jacket Style with All Seasons - Red Men's Jacket
+                      with Zip
+                    </h3>
+                    <p>SKU: 2512117</p>
+                    <div class="rating-stars">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-regular fa-star-half-stroke"></i>
                     </div>
-                    <div class="login">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" placeholder="nam@example.com" pattern=".*@example.com" required />
-                        <label for="password">Password</label>
-                        <input type="password" id="password" name="password" placeholder="..........." maxlength="50" required />
-                        <label for="password">Re-Password</label>
-                        <input type="password" id="password" name="password" placeholder="............" maxlength="50" required />
-                        <input type="submit" value="Sign Up" class="cta-small" />
-                    </div>
+                  </div>
+
+                  <div class="details">
+                    <label for="size">size</label>
+                    <select id="size" name="size">
+                      <option value="46(S)">46(S)</option>
+                      <option value="48(M)">48(M)</option>
+                      <option value="50(L)">50(L)</option>
+                      <option value="52(XL)">52(XL)</option>
+                    </select>
+                  </div>
+                  <div class="details">
+                    <label for="quantity">Qty</label>
+                    <select id="quantity" name="quantity">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="3">4</option>
+                    </select>
+                  </div>
+                  <div class="details">
+                    <label for="color">Color</label>
+                    <select id="color" name="color">
+                      <option value="Red">Red</option>
+                      <option value="light Green">Light green</option>
+                      <option value="green">Green</option>
+                      <option value="black">Black</option>
+                    </select>
+                  </div>
+                  <div class="details price">
+                    <label for="picklist">Total</label>
+                    <select id="picklist" name="picklist">
+                      <option value="1">800kr</option>
+                      <option value="2">1600kr</option>
+                      <option value="3">2400kr</option>
+                      <option value="4">3600kr</option>
+                    </select>
+                  </div>
                 </div>
+              </div>
             </div>
-        </div>
-    </main>
-    
-    <footer>
-        <section class="info-footer">
-            <div class="address">
-                <h5>Contact us</h5>
-                <address>Stockholm 163 71</address>
-                <address>Sweden</address>
-                <address>0700418127</address>                  
-                <a href="info@rainday.se">info@rainday.se</a>  
-            </div>        
-            <div class="subscribe">
-                <label for="text">subscribe</label>
-                    <input type="text" id="text" name="text" placeholder="name@example.com" pattern>
-            </div>  
-            <div class="socialmedia">
-                <div class="render">        
-                <h5>follow us</h5>
-                    <a href="https://www.youtube.com/@wdasie21">
-                    <i class="fa-brands fa-youtube"></i>                  
-                    </a>
-                    <a href="https://www.facebook.com/wdasie21">
-                    <i class="fa-brands fa-facebook"></i>                 
-                    </a>
-                    <a href="https://www.instagram.com/wdasie21/">
-                    <i class="fa-brands fa-instagram"></i>                 
-                    </a>
-                    <a href="https://www.tiktok.com/@wdasie21">
-                    <i class="fa-brands fa-tiktok"></i>                 
-                    </a>            
-                </div> 
-                <div class="render">
-                    <h5>accept payment</h5>
-                    <a href="page404.html"><img src="../image/icon/credite.jpg" alt="accepted payment klarna, visa, mastercard, paypal"/></a>
+
+            <!-- Payment Methods -->
+            <div class="order-view creditcard">
+              <h3>Payment Requested</h3>
+              <input
+                type="radio"
+                id="paypal"
+                name="payment-method"
+                value="paypal"
+              />
+              <label for="paypal"><i class="fa-brands fa-paypal"></i></label>
+              <input type="radio" id="debit" name="payment-method" />
+              <label for="debit">
+                <i class="fa-brands fa-cc-visa"></i>
+                <i class="fa-brands fa-cc-mastercard"></i>
+              </label>
+              <div class="card">
+                <div class="paypal">
+                  <h3>Paypal</h3>
+                  <div class="login">
+                    <input
+                      type="email"
+                      id="info"
+                      name="info"
+                      placeholder="Name or email"
+                    />
+                  </div>
+                  <div class="buy">
+                    <a href="thankyou.html">Confirm</a>
+                  </div>
                 </div>
-              
-            </div>   
-        </section>          
-                <div class="more-info">
-                    @Rainday2024
-                <a href="page404.html">Return |</a>
-                <a href="page404.html">Delivery time |</a>
-                <a href="page404.html">New Letter |</a>
-                <a href="page404.html">FAQ </a>
-              </div> 
-            
-     </footer>
-</body>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Login Sections -->
+        <div class="login-section">
+          <div class="login">
+            <label for="email">Email</label><br />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="nam@example.com"
+              pattern=".*@example.com"
+              required
+            />
+            <label for="password">Password</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              maxlength="50"
+              placeholder="........"
+              required
+            />
+            <input type="submit" value="Login" class="cta-small" />
+          </div>
+          <div class="login">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="nam@example.com"
+              pattern=".*@example.com"
+              required
+            />
+            <label for="password">Password</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="..........."
+              maxlength="50"
+              required
+            />
+            <label for="password">Re-Password</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="............"
+              maxlength="50"
+              required
+            />
+            <input type="submit" value="Sign Up" class="cta-small" />
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <section class="info-footer">
+        <div class="address">
+          <h5>Contact us</h5>
+          <address>Stockholm 163 71</address>
+          <address>Sweden</address>
+          <address>0700418127</address>
+          <a href="info@rainday.se">info@rainday.se</a>
+        </div>
+        <div class="subscribe">
+          <label for="text">subscribe</label>
+          <input
+            type="text"
+            id="text"
+            name="text"
+            placeholder="name@example.com"
+            pattern
+          />
+        </div>
+        <div class="socialmedia">
+          <div class="render">
+            <h5>follow us</h5>
+            <a href="https://www.youtube.com/@wdasie21">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+            <a href="https://www.facebook.com/wdasie21">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/wdasie21/">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.tiktok.com/@wdasie21">
+              <i class="fa-brands fa-tiktok"></i>
+            </a>
+          </div>
+          <div class="render">
+            <h5>accept payment</h5>
+            <a href="page404.html"
+              ><img
+                src="../image/icon/credite.jpg"
+                alt="accepted payment klarna, visa, mastercard, paypal"
+            /></a>
+          </div>
+        </div>
+      </section>
+      <div class="more-info">
+        @Rainday2024
+        <a href="page404.html">Return |</a>
+        <a href="page404.html">Delivery time |</a>
+        <a href="page404.html">New Letter |</a>
+        <a href="page404.html">FAQ </a>
+      </div>
+    </footer>
+  </body>
 </html>
