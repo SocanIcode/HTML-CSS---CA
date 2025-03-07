@@ -1,6 +1,6 @@
 [**Rainy Days E-commerce**](https://github.com/SocanIcode/HTML-CSS---CA.git)
 
-![Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.](https://github.com/SocanIcode/Portfolio-1/blob/main/images/rainday%20-card.png)
+![rainday image card, retrived from profilepage card](https://github.com/SocanIcode/Portfolio-1/blob/main/images/rainday%20-card.png)
 
 **Overview**
 
