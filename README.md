@@ -1,12 +1,12 @@
-[**Rainy Days E-commerce**](https://github.com/SocanIcode/HTML-CSS---CA.git)
+## HTML & CSS Course Assignment - [Rainy Days E-commerce](https://github.com/SocanIcode/HTML-CSS---CA.git)
 
 ![rainday image card, retrived from profilepage card](https://github.com/SocanIcode/Portfolio-1/blob/main/images/rainday%20-card.png)
 
-**Overview**
+## Overview
 
 Rainy Days is a responsive e-commerce website designed to provide a seamless shopping experience. Built using HTML and CSS, this project features a clean, user-friendly interface with well-structured navigation and layout, ensuring accessibility across all devices.
 
-**Features**
+## Features
 
 - Fully responsive design for desktop and mobile devices
 
@@ -16,7 +16,7 @@ Rainy Days is a responsive e-commerce website designed to provide a seamless sho
 
 - Structured layout for easy browsing
 
-**Pages Included**
+## Pages Included
 
 - [index.html](https://github.com/SocanIcode/HTML-CSS---CA/blob/main/index.html) - Home Page
 
@@ -38,7 +38,7 @@ Rainy Days is a responsive e-commerce website designed to provide a seamless sho
 
 - [thankyou.html](https://github.com/SocanIcode/HTML-CSS---CA/blob/main/html/thankyou.html) - Order Confirmation Page
 
-**Built With**
+## Built With
 
 - Figma - UI/UX Design
 
@@ -46,7 +46,7 @@ Rainy Days is a responsive e-commerce website designed to provide a seamless sho
 
 - CSS - Styling & Layout
 
-**Reflection & Areas for Improvement**
+## Reflection & Areas for Improvement
 
 - JavaScript Integration - Some pages that were originally static could now benefit from JavaScript for interactivity.
 
